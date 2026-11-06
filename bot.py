@@ -14,9 +14,11 @@ from aiogram.types import (
 )
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-# ================== SOZLAMALAR ==================
-BOT_TOKEN = "BOT_TOKEN_SHU_YERGA"
-MAIN_ADMINS = [123456789]                      # asosiy admin ID lari
+# ================== SOZLAMALAR ===========
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip().strip('"').strip("'")
+print("TOKEN uzunligi:", len(BOT_TOKEN), "| ':' bor:", ":" in BOT_TOKEN, flush=True)
+MAIN_ADMINS = [123456789]
+                    # asosiy admin ID lari
 
 BUBBLE_URL = "https://bubble.example.com"      # Bubble havolasi
 BUBBLE_CHAT_URL = "https://bubble.example.com/chat"  # Bubble Chat havolasi
