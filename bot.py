@@ -1,10 +1,4 @@
-​"""
-Bubble bot — aiogram 3.x
-O'rnatish:  pip install aiogram
-Ishga tushirish:  python bot.py
-"""
-import asyncio
-import sqlite3
+import importimport sqlite3
 import aiohttp
 from aiogram import Bot, Dispatcher, F, BaseMiddleware
 from aiogram.filters import CommandStart
