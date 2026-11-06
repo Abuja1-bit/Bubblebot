@@ -1,4 +1,7 @@
-import importimport sqlite3
+import asyncio
+import os
+import sqlite3
+import aiohttp
 import aiohttp
 from aiogram import Bot, Dispatcher, F, BaseMiddleware
 from aiogram.filters import CommandStart
