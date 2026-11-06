@@ -1,4 +1,4 @@
-import asyncio
+ import asyncio
 import os
 import sqlite3
 import aiohttp
@@ -17,7 +17,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 # ================== SOZLAMALAR ===========
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip().strip('"').strip("'")
 print("TOKEN uzunligi:", len(BOT_TOKEN), "| ':' bor:", ":" in BOT_TOKEN, flush=True)
-MAIN_ADMINS = [123456789]
+MAIN_ADMINS = [8558280057]
                     # asosiy admin ID lari
 
 BUBBLE_URL = "https://bubble.example.com"      # Bubble havolasi
